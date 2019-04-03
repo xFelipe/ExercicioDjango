@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exclusão do produto {{ produto.nome }}</title>
+</head>
+<body>
+    <h1>Tem certeza que deseja excluir o produto {{ produto.nome }}</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <button type="submit">Deletar</button>
+        &nbsp;
+        <a href="{% url 'url_listagem_produto' %}">Voltar</a>
+    </form>
+</body>
+</html>

@@ -9,7 +9,7 @@
 
 {% for produto in produtos %}
     <li>
-        {{ produto.nome }}
+        <a href="{% url 'url_visualizar_produto' produto.id %}">{{ produto.nome }}</a>
     </li>
 {% endfor %}
 
