@@ -12,6 +12,9 @@
         <a href="{% url 'url_visualizar_produto' produto.id %}">{{ produto.nome }}</a>
     </li>
 {% endfor %}
-
+    <br>
+    <li>
+        <a href="{% url 'url_criar_produto' %}">Novo produto</a>
+    </li>
 </body>
 </html>
